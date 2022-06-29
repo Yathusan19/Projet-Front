@@ -1,0 +1,53 @@
+ul,nav {
+  list-style: none; /* raccourci pour spécifier type du marqueur d'item et la position du texte par rapport au marqueur d'item.*/
+}
+
+a{
+  padding: 10px;
+  text-decoration: none;
+  color:white;
+  cursor: pointer; /* permet de spécifier la forme du curseur à utiliser sur un élément */
+  opacity: 1; /* définit la transparence d'un élément (le degré de visibilité de l'arrière plan */
+
+}
+
+header{
+  display:flex;
+  justify-content: space-between; /*  indique la façon dont l'espace doit être réparti entre et autour des éléments selon l'axe principal d'un conteneur flexible */
+  align-items: center;
+  padding : 35px 100 0;
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 24px;
+  background-color: green;
+}
+
+header nav {
+  display: flex;
+}
+
+header nav li {
+  margin : 0 15px;
+}
+
+.Header > h2 {
+font-family: 'Montserrat';
+font-style: normal;
+font-weight: 800;
+font-size: 30px;
+line-height: 37px;
+}
+
+#header-connexion {
+background: #88BB4B;
+border-radius: 0px 30px 30px 30px;
+}
+
+#header-panier {
+  background: #88BB4B;
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  }

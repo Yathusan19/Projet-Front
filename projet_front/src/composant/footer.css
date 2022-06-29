@@ -1,0 +1,46 @@
+footer {
+    background-color: #88BB4B;
+    text-align: center;
+    border-radius: 20px 20px 0px 0px;
+
+ }
+footer > .title-footer > h2 {
+text-align: center;
+font-family: 'Montserrat';
+font-style: normal;
+font-weight: 800;
+font-size: 30px;
+line-height: 73px;
+text-transform: uppercase; /* permet de rendre le titre transparent */
+color: #FFFFFF;
+
+}
+
+footer > .copyright > p {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 17px;
+    line-height: 24px;
+    color: #FFFFFF;
+}
+
+footer > .links-footer > .container > ul > li {
+    text-align: center;
+    align-items:center;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 30px;
+    color: #FFFFFF;
+
+}
+
+footer > .links-footer {
+    display: flex;  /* permet d'aligner les élèments */
+    flex-direction: row;  /* définit la façon dont les éléments flexibles sont placés dans un conteneur flexible */
+    align-items: center;
+    justify-content: space-evenly; /* indique la façon dont l'espace doit être réparti entre et autour des éléments */
+  }
+
