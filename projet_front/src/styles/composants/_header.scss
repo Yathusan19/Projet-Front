@@ -1,0 +1,80 @@
+ul,nav {
+    list-style: none; /* raccourci pour spécifier type du marqueur d'item et la position du texte par rapport au marqueur d'item.*/
+}
+
+.header {
+    z-index: 10;
+    position: absolute;
+    width: 100%;
+    top: 0;
+    left: 0;
+    display:flex; /* permet d'aligner les élèments */
+    justify-content: space-between; /*  indique la façon dont l'espace doit être réparti entre et autour des éléments selon l'axe principal d'un conteneur flexible */
+    align-items: center;
+    font-family: 'Montserrat';
+    padding: 0 6vw;
+    height: 100px;
+}
+
+.header-navigation {
+    display: flex;
+    align-items: center;
+    gap: 45px;
+    transition: transform ease-out .5s;
+    a {
+        font-size: 1em;
+        font-weight: 500;
+    }
+}
+
+.burger-button {
+    z-index: 10;
+    display: none;
+    position: relative;
+    width: 30px;
+    height: 2px;
+    background-color: #FFF;
+    &::after, &::before {
+        content: "";
+        position: absolute;
+        width: 100%;
+        height: 2px;
+        background-color: #FFF;
+    }
+    &::after {
+        bottom: -8px;
+        left: 0;
+    }
+    &::before {
+        top: -8px;
+        left: 0;
+    }
+}
+
+.logo {
+    color: #FFF;
+    font-weight: 800;
+    font-size: 1.875em;
+    line-height: 37px;
+}
+
+.header-panier {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: $vert;
+    border-radius: 100%;
+    padding: 0.500em;
+    width: 3.125em;
+    height: 3.125em;
+}
+
+.header-button {
+    background-color: $vert;
+    padding: 0.500em 1.500em;
+    border-radius: 0 1.500em 1.500em 1.500em;
+}
+
+@media all and (max-width: 700px) {
+
+}

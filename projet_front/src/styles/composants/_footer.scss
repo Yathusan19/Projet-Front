@@ -1,0 +1,38 @@
+footer {
+	background-color: $vert;
+	padding: 75px 30px 30px 30px;
+}
+
+.title-footer {
+	text-align: center;
+	font-weight: 800;
+	font-size: 3.750em;
+	text-transform: uppercase;
+	color: #FFF;
+	margin-bottom: 120px;
+}
+
+.links-footer {
+	display: flex;  /* permet d'aligner les élèments */
+	justify-content: space-between; /* indique la façon dont l'espace doit être réparti entre et autour des éléments */
+	max-width: 750px;
+	margin: auto;
+	.container {
+		display: flex;
+		flex-direction: column;
+		font-weight: 500;
+		margin-bottom: 70px;
+		width: 250px;
+		a {
+			margin: 7px 0;
+		}
+	}
+}
+
+.copyright {
+	text-align: center;
+	a {
+		font-weight: 500;
+		color: #FFF;
+	}
+}
