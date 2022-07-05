@@ -1,6 +1,6 @@
 import "../../styles/pages/_homepage.scss";
-import Footer from "../Footer";
-import Header from "../Header";
+import ProfilsContainer from "../ProfilsContainer";
+import { Link } from "react-router-dom";
 
 
 export default function Home() {
@@ -11,20 +11,20 @@ export default function Home() {
         <section className='sectionNousRejoindre'>
             <h1 className='decouvrirProjet'>Découvrez notre projet</h1>
             <div className="containerProjet">
-                <a href="#"><div className="containerImageBloc" id='imageUn'>
+                <Link to="/"><div className="containerImageBloc" id='imageUn'>
                     <div className="masqueNoir">
                         <h3 className='titreProjet'>Vous êtes un agriculteur ? <br/>
                             Venez prendre part au projet 
                         </h3>
                     </div>
-                </div></a>
-                <a href="#"><div className="containerImageBloc" id='imageDeux'>
+                </div></Link>
+                <Link to="/"><div className="containerImageBloc" id='imageDeux'>
                     <div className="masqueNoir">
                         <h3 className='titreProjet'>Vous êtes un agriculteur ? <br/>
                             Venez prendre part au projet 
                         </h3>
                     </div>
-                </div></a>
+                </div></Link>
             </div>
         </section>
         <section className="sectionMap">
@@ -36,30 +36,10 @@ export default function Home() {
                 </div>
             </div>
         </section>
-        <section className="sectionAgriculteur">
-            <h2 className='titleAgri'>Ils nous ont fait confiance</h2>
-            <div className="containerBlocsGrid">
-                <div className="blocs" id="imageAgriUn">
-                    <div className="filtreNoir">
-                        <p className='presAbsolute'>Hervé <br/> <b id='changeSize'>Maraîcher dans le Gers</b></p>
-                    </div>
-                </div>
-                <div className="blocs" id="imageAgriDeux">
-                    <div className="filtreNoir">
-                        <p className='presAbsolute'>Luc <br/> <b id='changeSize'>Producteur de pomme dans l'Hérault</b></p>
-                    </div>
-                </div>
-                <div className="blocs" id="imageAgriTrois">
-                    <div className="filtreNoir">
-                        <p className='presAbsolute'>Lucas <br/> <b id='changeSize'>Producteur de salade dans l'Oise</b></p>
-                    </div>
-                </div>
-                <div className="blocs" id="imageAgriQUatre"></div>
-                <div className="blocs" id="imageAgriCinq"></div>
-                <div className="blocs" id="imageAgriSix"></div>
-            </div>
+        <section className="sectionProfils">
+            <h2 className="titleAgri">Ils nous ont fait confiance</h2>
+            <ProfilsContainer/>
         </section>
-        <Footer/>
         </div>
     )
 }
