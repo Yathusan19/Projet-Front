@@ -1,13 +1,17 @@
 import "../../styles/pages/_homepage.scss";
+import "../../styles/composants/_loc-search.scss"
 import ProfilsContainer from "../ProfilsContainer";
 import { Link } from "react-router-dom";
+import HeroHeader from "../HeroHeader";
+import LocSearch from "../LocSearch";
 
 
 export default function Home() {
 
     return (
         <div className="homepage">
-            <header className='headerTransparent'> </header>
+            <HeroHeader/>
+            <LocSearch/>
         <section className='sectionNousRejoindre'>
             <h1 className='decouvrirProjet'>Découvrez notre projet</h1>
             <div className="containerProjet">
