@@ -1,19 +1,35 @@
-export default function SearchForm() {
+export default function SearchForm({ query, setQuery }) {
+
+    function handleSubmit(e) {
+        e.preventDefault()
+        const place = document.querySelector('#place').value
+        const product = document.querySelector('#product').value
+        const price = document.querySelector('#price').value
+        const delivery = document.querySelector('#delivery').value
+        setQuery({
+            place: place,
+            product: product,
+            price: price,
+            delivery: delivery
+        })
+        console.log(query)
+    }
+       
     return (
         <div className="form-container">
             <div className="filter-label">Filtres</div>
-            <form className="form" action="" method="POST">
+            <form className="form" action="" method="POST" onSubmit={(e) => handleSubmit(e)}>
                 <div className="input-container">
-                    <label htmlFor="lieu">Lieu</label>
-                    <input type="text" name="lieu" id="lieu" placeholder="Tapez quelque chose..." />
+                    <label htmlFor="place">Lieu</label>
+                    <input type="text" name="place" id="place" placeholder="Tapez quelque chose..." />
                 </div>
                 <div className="input-container">
-                    <label htmlFor="item">Que recherchez vous ?</label>
-                    <input type="text" name="item" id="item" placeholder="Tapez quelque chose..." />
+                    <label htmlFor="product">Que recherchez vous ?</label>
+                    <input type="text" name="product" id="product" placeholder="Tapez quelque chose..." />
                 </div>
                 <div className="input-container">
-                    <label htmlFor="prix">Gamme de prix</label>
-                    <select name="prix" id="prix">
+                    <label htmlFor="price">Gamme de prix</label>
+                    <select name="price" id="price">
                         <option value="10">1-10€</option>
                         <option value="20">1-20€</option>
                         <option value="30">1-30€</option>
@@ -21,8 +37,8 @@ export default function SearchForm() {
                     </select>
                 </div>
                 <div className="input-container no-border">
-                    <label htmlFor="type">Type de livraison</label>
-                    <select name="type" id="type">
+                    <label htmlFor="delivery">Type de livraison</label>
+                    <select name="delivery" id="delivery">
                         <option value="livraison">Livraison</option>
                         <option value="point-de-rencontre">Point de rencontre</option>
                     </select>
