@@ -15,7 +15,7 @@ $datasAgriculteurs = $dataAgriculteurs->fetchAll(PDO::FETCH_ASSOC);
 
 $datasAgriculteursJson = json_encode($datasAgriculteurs);
 var_dump($datasAgriculteursJson);
-file_put_contents("dataAgriculteurs.json",$datasAgriculteursJson);
+file_put_contents("datasAgriculteurs.json",$datasAgriculteursJson);
 
 
 
