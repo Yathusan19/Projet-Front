@@ -22,7 +22,7 @@ ul,nav {
     gap: 45px;
     transition: transform ease-out .5s;
     a {
-        font-size: 1em;
+        font-size: 1.250em;
         font-weight: 500;
     }
 }
@@ -64,15 +64,21 @@ ul,nav {
     justify-content: center;
     background: $vert;
     border-radius: 100%;
-    padding: 0.500em;
-    width: 3.125em;
-    height: 3.125em;
+    // padding: 0.500em;
+    width: 50px;
+    height: 50px;
+    img{
+        width: 25px;
+    }
 }
 
 .header-button {
     background-color: $vert;
-    padding: 0.500em 1.500em;
+    padding: 0.6em 0;
     border-radius: 0 1.500em 1.500em 1.500em;
+    width: 170px;
+    height: 50px;
+    text-align: center;
 }
 
 @media all and (max-width: 700px) {
