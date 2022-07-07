@@ -6,7 +6,7 @@ export default function Article() {
 
 
     const handleChangeQuantity = (quantity) => {
-            setCount(p => p + quantity)
+        setCount(p => p + quantity)
     }
 
     let num = 0;
