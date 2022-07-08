@@ -11,7 +11,7 @@ export default function PaiementRetrait() {
             <h3>Paiements</h3>
             <div className="coordonnee-wrapper">
                 <h4>Numéro pour le point de rencontre :</h4>
-                <span class="code-retrait">8457</span>
+                <span className="code-retrait">8457</span>
                 <p className='light-text'>À conserver absolument sous peine de ne pas recevoir vos achats</p>
             </div>
             <div className="">
