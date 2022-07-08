@@ -13,7 +13,7 @@ export default function Header() {
 			<a  className="logo" href="/">PACKBIO</a>
 			<div className="burger-button" onClick={() => ToggleMenu()}></div>
 			<nav className="header-navigation">
-				<Link to="/">Accueil</Link>
+				<Link to="/panier">Accueil</Link>
 				<Link to="/produits">Produits</Link>
 				<Link to="/">Contact</Link>
 				<Link className="header-button" to="/">Connexion</Link>
