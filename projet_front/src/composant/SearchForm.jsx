@@ -1,18 +1,24 @@
+import { useContext } from "react"
+import { deliveryContext } from "../context/Contexts"
+
 export default function SearchForm({ query, setQuery }) {
+
+    const [delivery, handleDeliveryChange] = useContext(deliveryContext)
 
     function handleSubmit(e) {
         e.preventDefault()
         const place = document.querySelector('#place').value
         const product = document.querySelector('#product').value
         const price = document.querySelector('#price').value
-        const delivery = document.querySelector('#delivery').value
+        const deliveryType = document.querySelector('#delivery').value
         setQuery({
             place: place,
             product: product,
             price: price,
-            delivery: delivery
         })
+        handleDeliveryChange(deliveryType)
         console.log(query)
+        console.log(delivery)
     }
        
     return (

@@ -9,7 +9,6 @@ export default function Product() {
         place: false,
         product: false,
         price: false,
-        delivery: false
     })
 
 
