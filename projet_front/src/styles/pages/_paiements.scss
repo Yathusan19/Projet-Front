@@ -4,9 +4,8 @@
         grid-template-columns: auto 41%;
     }
     .paiement-form {
-        max-width: 650px;
         width: 100%;
-        margin: 40px auto 60px auto;
+        padding: 40px 5vw 60px 7vw;
         h4 {
             margin-bottom: 15px;
         }
@@ -103,18 +102,13 @@
 
     .paiement-row {
         border-bottom: 1px #000 solid;
-        .light-text {
-            font-size: 1em;
-            color: #55555599;
-            font-weight: 400;
-        }
         div {
             margin: 20px 0;
             display: flex;
             justify-content: space-between;
             align-items: center;
         }
-        p {
+        p:not(.light-text) {
             font-weight: 700;
             font-size: 1.250em;
         }
@@ -135,5 +129,17 @@
                 font-weight: 400;
             }
         }
+    }
+
+    .code-retrait {
+        color: $rouge;
+        font-size: 2.500em;
+        font-weight: 700;
+    }
+
+    .light-text {
+        font-size: 1em;
+        color: #55555599;
+        font-weight: 400;
     }
 }

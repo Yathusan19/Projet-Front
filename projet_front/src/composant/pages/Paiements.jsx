@@ -1,9 +1,14 @@
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import HeroHeader from "../HeroHeader";
 import PaiementLivraison from "../PaiementLivraison";
 import PaiementProduct from "../PaiementProduct";
+import { deliveryContext } from "../../context/Contexts";
+import { useContext } from "react";
+import PaiementRetrait from "../PaiementRetrait";
 
 export default function Paiements() {
+
+    const [ delivery, handleDeliveryChange ] = useContext(deliveryContext)
 
     const [panier, setPanier] = useState([{
         id: 1,
@@ -54,12 +59,17 @@ export default function Paiements() {
     }])
 
     const totalPrice = panier.reduce((acc, curr) => acc + curr.price, 0)
+    console.log(delivery)
     
     return (
         <section className="paiements-page">
             <HeroHeader title={"paiements"} />
             <div className="main-container">
-                <PaiementLivraison />
+                { delivery === 'livraison' ?
+                    <PaiementLivraison />
+                    :
+                    <PaiementRetrait />
+                }
                 <div className="panier-container">
                     {panier.map((product) => <PaiementProduct key={product.id} product={product}/>)}
                     <div className="paiement-row">

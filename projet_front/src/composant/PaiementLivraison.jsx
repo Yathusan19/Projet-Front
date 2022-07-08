@@ -25,10 +25,10 @@ export default function PaiementLivraison() {
                 <input type="text" name="adresse" id="adresse" placeholder="Adresse" />
                 <input type="text" name="appartement" placeholder="Appartement, suite, etc. (facultatif)" />
                 <div className="row">
-                    <input type="number" name="code-postal" id="code-postal" placeholder="Code postal" />
+                    <input type="text" name="code-postal" id="code-postal" placeholder="Code postal" />
                     <input type="text" name="ville" id="ville" placeholder="Ville" />
                 </div>
-                <input type="number" name="telephone" placeholder="Téléphone" />
+                <input type="text" name="telephone" placeholder="Téléphone" />
                 <div className="checkbox">
                     <input type="checkbox" name="sauvegarde" id="sauvegarde" />
                     <span>Sauvegarder mes coordonnées pour la prochaine fois</span>
