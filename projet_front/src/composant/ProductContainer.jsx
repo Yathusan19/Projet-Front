@@ -1,5 +1,6 @@
 import { useState } from "react"
 import Product from "./Product";
+import products from '../php/datasProduits.json';
 
 export default function ProductContainer({query}) {
     
@@ -11,53 +12,7 @@ export default function ProductContainer({query}) {
         return false
     }
 
-    const [productsList, setProductsList] = useState([{
-        id: 1,
-        name: "pack Santa maria (légumes)",
-        price: 19.99,
-        image: 'https://www.nifeislife.com/img/c/536.jpg',
-        seller: 'PackBio',
-        quantity: 2,
-        localisation: 'Bordeaux'
-    },
-    {
-        id: 2,
-        name: "concombre",
-        price: 23.99,
-        image: 'https://www.nifeislife.com/img/c/536.jpg',
-        seller: 'PackBio',
-        unit: '100g',
-        localisation: 'Paris'
-    },
-    {
-        id: 3,
-        name: "carotte",
-        price: 17.85,
-        image: 'https://www.nifeislife.com/img/c/536.jpg',
-        seller: 'PackBio',
-        unit: 'kilo',
-        promo: '-20%',
-        localisation: 'Montreuil'
-    },
-    {
-        id: 4,
-        name: "salade",
-        price: 25.00,
-        image: 'https://www.nifeislife.com/img/c/536.jpg',
-        seller: 'PackBio',
-        quantity: 5,
-        unit: 'pièce',
-        localisation: 'Toulouse'
-    },
-    {
-        id: 5,
-        name: "tomate",
-        price: 5.14,
-        image: 'https://www.nifeislife.com/img/c/536.jpg',
-        seller: 'PackBio',
-        unit: '~50g',
-        localisation: 'Marseille'
-    }])
+    const [productsList, setProductsList] = useState(products)
 
     // function getAllProducts() {
     //     axios.get('DATABASE_URL')

@@ -89,13 +89,15 @@
     font-size: 30px;
     margin: 0 30px;
     bottom: 50px;
+    color: white;
 }
 
 /* Section map */ 
 
 .sectionMap{
-    height: 120vh;
+    height: 90vh;
     padding: 0 91px;
+    max-width: 1440px;
 }
 
 .mapTitle{
@@ -116,20 +118,37 @@
     top: -12px;
     left: -40px;
 }
+.container-map-flex{
+    width: 100%;
+    display: flex;
+    margin: auto;
+}
 .containerMap{
-    width: 80vw;
-    margin: 60px auto;
-
+    width: 50vw;
+    height: 85vh;
+    div{
+        height: 80%;
+        border-radius: 20px;
+    }
 }
-.map{
+.show-map{
     width: 100%;
     height: 1000px;
-    background-color: black;
-    border-radius: 20px;
 }
-iframe{
-    width: 100%;
-    height: 1000px;
+.container-map-txt{
+    height: 75vh;
+    width: 40%;
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 0 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    border-radius: 0 20px 20px 0;
+    p{
+        text-align: justify;
+    }
 }
 
 /* Section présentation agriculteur */ 

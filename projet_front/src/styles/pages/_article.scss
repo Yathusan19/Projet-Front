@@ -1,0 +1,494 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+
+
+
+.section_one{
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+
+
+
+.title{
+    display: flex;
+    align-items: flex-end;
+    
+    font-style: normal;
+    font-weight: 800;
+    font-size: 50px;
+    text-transform: uppercase;
+    
+    color: #555555;
+}
+
+.img_sec{
+    
+    /* width: 697px; */
+    height: 559px;
+    left: 89px;
+    top: 199px;
+    
+    background: rgba(0, 0, 0, 0.01);
+    border-radius: 20px;
+    
+}
+
+.zone_buttons{
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.rest{
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    
+    text-transform: initial;
+    margin-left: 20px;
+    margin-left: 2px;
+    width: 154px;
+    height: 50px;
+    left: 1130px;
+    top: 314px;
+    
+    
+    background: #DD4124;
+    border-radius: 0px 10px 10px 0px;
+    
+    
+    
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    
+    text-align: center;
+    
+    color: #FFFFFF;
+    
+}
+
+.first_sec_text{
+    margin-left: 25px;
+}
+
+.vente{
+    
+    font-style: normal;
+    font-weight: 400;
+    
+    color: #555555;
+    
+}
+
+
+.title_sec_two{
+    margin: 30px;
+    
+    font-style: normal;
+    font-weight: 600;
+    font-size: 30px;
+    color:#555555;
+    
+    text-align: justify;
+    
+}
+
+
+.img_0{
+    width: 378px;
+    height: 335px;
+    left: 90px;
+    top: 900px;
+    
+    
+    border-radius: 20px;
+    // background-image: url(../../../public/assets/images/image2.png) ;
+    background-repeat: no-repeat;
+    background-size: contain;
+    display: flex;
+    align-items: center;
+    
+}
+
+.img_1{
+    width: 378px;
+    height: 335px;
+    left: 90px;
+    top: 900px;
+    border-radius: 20px;
+    // background-image: url(../../../public/assets/images//image3.png) ;
+    background-repeat: no-repeat;
+    background-size: contain;
+    display: flex;
+    align-items: center;
+}
+
+.img_2{
+    width: 378px;
+    height: 335px;
+    left: 90px;
+    top: 900px;
+    
+    border-radius: 20px;
+    // background-image: url(../../../public/assets/images//image4.png) ;
+    background-repeat: no-repeat;
+    background-size: contain;
+    display: flex;
+    align-items: center;
+}
+
+
+.third_section{
+    display: flex;
+    justify-content: space-around;
+    
+}
+
+.reservation{
+    width: 195px;
+    height: 50px;
+    left: 839px;
+    top: 558px;
+    
+    
+    background: #88BB4B;
+    border-radius: 15px;
+    border: none;
+    
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 21px;
+    text-align: center;
+    
+    color: #FFFFFF;
+}
+
+
+.paiement{
+    
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 21px;
+    text-align: center;
+    
+    color: #FFFFFF;
+    border: none;
+    width: 195px;
+    height: 50px;
+    left: 1044px;
+    top: 558px;
+    
+    
+    
+    background: #DD4124;
+    border-radius: 15px;
+}
+
+
+.vente2{
+    
+    
+    height: 24px;
+    left: 834px;
+    top: 369px;
+    
+    
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 24px;
+    
+    
+    color: #555555;
+    
+    
+}
+
+.price{
+    margin-top: 15px;
+    display: flex;
+    display: flex;
+    align-items: center;
+}
+
+
+.price >.prix{
+    
+    font-style: normal;
+    font-weight: 700;
+    font-size: 50px;
+    line-height: 60px;
+    
+    text-align: center;
+    
+    color: #555555;
+    
+}
+
+.price >.taxe{
+    margin-left: 20px !important;
+    
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 21px;
+    
+    color: #555555;
+}
+
+.poids{
+    margin-left: 20px !important;
+}
+.section_two{
+    padding: 30px;
+}
+
+.section_one{
+    padding: 60px;
+}
+
+
+.product-count {
+    
+    top: 25%;
+    left: 45%;
+    
+    border: 1px solid gray;
+}
+
+.quantity_poids{
+    margin-top: 15px;
+    display: flex;
+    align-items: center;
+    
+}
+
+.product-count a {
+    text-decoration: none;
+    font-weight: 700;
+    color: black;
+}
+
+.button-count {
+    background: white;
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    
+    color: rgb(59, 19, 19);
+    font-size: 24px;
+    line-height: 30px;
+    text-align: center;
+    border: none;
+    outline: none;
+}
+.button-count:active {
+    background-color: #1565C0;
+}
+
+.number-product {
+    display: inline-block;
+    width: 46px;
+    height: 28px;
+    font-size: 24px;
+    border: none;
+    text-align: center;
+}
+
+
+
+.titre{
+    
+    font-style: normal;
+    font-weight: 800;
+    font-size: 30px;
+    line-height: 36px;
+    text-transform: uppercase;
+    
+    color: #FFFFFF;
+    
+}
+
+.vente{
+    margin-top: 15px;
+    
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    
+}
+
+.prix{
+    
+    font-style: normal;
+    font-weight: 700;
+    font-size: 25px;
+    line-height: 30px;
+    
+    
+    color: #FFFFFF;
+    
+    
+}
+
+.information{
+    margin-left: 20px;
+    margin-top: 170px;
+    
+}
+
+
+
+.information>.vente{
+    color: #FFFFFF;
+}
+
+.quantite{
+    margin-top: 15px;
+}
+
+
+
+@media only screen and (max-width: 900px) {
+    .section_one {
+        display: flex;
+        align-items: center;
+        width: 100%;
+        flex-wrap: wrap;
+        padding: 0;
+    }
+    
+    
+    .section_two {
+        padding-top: 10px;
+        padding-left: 60px;
+        padding-right: 60px;
+    }
+    
+    .title {
+        text-align: center;
+        display: block;
+        align-items: flex-end;
+        
+        font-style: normal;
+        font-weight: 800;
+        font-size: 30px;
+        /* line-height: 60px; */
+        text-transform: uppercase;
+        color: #555555;
+    }
+    
+    .rest{
+        display: initial;
+        padding: 10px;
+    }
+    
+    .quantity_poids{
+        align-items: center;
+        justify-content: center;
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .description{
+        text-align: center;
+    }
+    
+    .img_sec {
+        margin: 0 auto;
+        
+        height:370px;
+        
+    }
+    .zone_buttons {
+        padding: 30px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .reservation {
+        margin-bottom: 20px;
+    }
+    
+    .img_sec>img{
+        width: 100%;
+        max-width: 400px;
+        height: auto;
+        
+    }
+    
+    .information {
+        margin-left: 10px;
+        margin-top: 150px;
+    }
+    
+    .first_sec_text {
+        margin: 0 auto;
+    }
+    
+    .third_section {
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        
+    }
+    
+    .vente {
+        TEXT-ALIGN: center;
+        margin-top: 20px;
+    }
+    
+    .price {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: 20px;
+    }
+    
+    .quantite{
+        text-align: center;
+        margin-top: 20px;
+    }
+    .img_0 {
+        margin-top: 15px;
+        
+    }
+    
+    .img_1 {
+        margin-top: 15px;
+        display: initial;
+    }
+    
+    .img_1 .information {
+        margin-top: 185px;
+    }
+    .img_2 {
+        margin-top: 15px;
+    }
+    .information .titre{
+        text-align: center;
+    }
+    .information .prix{
+        text-align: center;
+        
+    }
+}
+
+@media only screen and (min-width: 1500px){
+    .information{
+        margin-left: 20px;
+        margin-top: 190px;
+    }
+    
+}
