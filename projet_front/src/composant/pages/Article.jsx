@@ -9,7 +9,7 @@ export default function Article() {
     const [count, setCount] = useState(0);
 
     const handleChangeQuantity = (quantity) => {
-        setCount(p => p + quantity)
+    setCount(p => (p+quantity>=0 && p+quantity<=2) ? p+quantity : p)    
     }
 
     let num = 0;
@@ -17,32 +17,6 @@ export default function Article() {
     let inputNumberProduct = document.getElementsByClassName("number-product")[0];
 
     const params = useParams();
-
-    // buttonsCount[1].addEventListener("click", () => {
-    //     num = parseInt(inputNumberProduct.value);
-    //     if (num > 1) {
-    //         inputNumberProduct.value = num - 1;
-    //     }
-    //     if (num == 2) {
-    //         buttonsCount[0].disabled = true;
-    //     }
-    //     if (num == 10) {
-    //         buttonsCount[1].disabled = false;
-    //     }
-    // });
-
-    // buttonsCount[1].addEventListener("click", () => {
-    //     num = parseInt(inputNumberProduct.value);
-    //     if (num < 10) {
-    //         inputNumberProduct.value = num + 1;
-    //     }
-    //     if (num > 0) {
-    //         buttonsCount[0].disabled = false;
-    //     }
-    //     if (num == 9) {
-    //         buttonsCount[1].disabled = true;
-    //     }
-    // });
 
     return (
         <div className="article-page">
