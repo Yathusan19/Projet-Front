@@ -25,27 +25,24 @@ export default function Header() {
 			</nav>
 		</header>
 		{modal && 
-				<div id="id01" class="modal">
-				<div class="modal-dialog">
-				  <div class="modal-content">
-					<header class="container"> 
-					  <a href="#" class="closebtn">×</a>
-					  <h2>Connexion</h2>
-					</header>
-					<div class="container">
-						<form action="">
-							<input type="text" id="login" name="login" placeholder="login"/>
-							<input type="text" id="password" name="login"placeholder="password"/>
-						</form>
+				<div className="container-filter">
+					<div id="id01" className="modal">
+						<div className="modal-dialog">
+						<div className="modal-content">
+							<a href="#" className="closebtn">×</a>
+							<h2>Connexion</h2>
+							<div className="container">
+								<form action="">
+									<input type="text" id="login" name="login" placeholder="Identifiant"/>
+									<input type="text" id="password" name="login" placeholder="Mot de passe"/>
+									<a href="" className="link-forgot">Mot de passe oublié ?</a>
+									<input type="radio" value="Male" name="gender" className="radio"/> Se souvenir de moi
+									<button className="button-submit">Connexion</button>
+								</form>
+							</div>
+						</div>
 					</div>
-					<footer class="container">
-					<form action="">
-					<a href="">Mot de passe oublié ?</a>
-					<input type="submit" className="valide" value="Connexion"/>
-					</form>
-					</footer>
-				  </div>
-				</div>
+				</div> 
 			  </div> 
 				}
 			</div>
