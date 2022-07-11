@@ -17,7 +17,7 @@ export default function ProfilsContainer(){
         id: 2,
         name: "Luc",
         desc: "Producteur de pommes dans l’Hérault.",
-        image: "https://www.nifeislife.com/img/c/536.jpg"
+        image: "https://images.ladepeche.fr/api/v1/images/view/5c37c0ff3e454617886b833f/large/image.jpg"
     },
     {
         id: 3,

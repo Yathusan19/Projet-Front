@@ -22,11 +22,10 @@ nav {
         color: #FFF;
     }
 }
-
 .modal {
-    z-index: 10000;
+    z-index: 1000;
     position: absolute;
-    top: 50%;
+    top: calc(50% - (380px/2));
     left: 40%;
     @keyframes slideDownFadeIN {
         from {
@@ -60,21 +59,27 @@ nav {
         margin: auto;
         background-color: #f3f3f3;
         position: relative;
-        padding: 0;
+        padding: 20px 42px;
         outline: 0;
-        border: 1px #777 solid;
         text-align: justify;
-        width: 80%;
+        height: 380px;
+        width: 100%;
         box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
         animation-name: slideDownFadeIN;
         animation-duration: 0.5s;
+    }
+    .modal-content {
+        h2{
+            text-align: center;
+            color: #DD4124;
+        }
     }
     .closebtn {
         text-decoration: none;
         float: right;
         font-size: 35px;
         font-weight: bold;
-        color: #fff;
+        color: #555;
     }
     .closebtn:hover,
     .closebtn:focus {
@@ -85,16 +90,36 @@ nav {
     .container {
         padding: 2px 16px;
     }
-    header {
-        background-color: #5cb85c;
-        font-size: 1em;
-        text-align: center;
-        color: white;
+    form{
+        width: 100%;
+        input{
+            height: 45px;
+            width: 100%;
+            border: none;
+            margin: 20px 0;
+            padding: 0 10px;
+        }
+        .radio{
+            width: 14px;
+            height: 14px;
+            font-size: 14px;
+        }
     }
-    footer {
-        background-color: #5cb85c;
-        font-size: 1em;
-        color: white;
+    button{
+        border: none;
+        color: #DD4124;
+        background-color: white;
+        width: 125px;
+        height: 35px;
+        border-radius: 10px;
+        display: block;
+        margin: 20px 0 0 auto;
+        border-radius: 1px;
+    }
+    .link-forgot{
+        display: block;
+        text-decoration: underline;
+        font-size: 14px;
     }
 }
 
