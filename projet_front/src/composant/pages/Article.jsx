@@ -19,7 +19,7 @@ export default function Article() {
     const params = useParams();
 
     return (
-        <div className="article-page">
+        <div className="article">
             {
                 produits.map((produit) => 
                     produit.id === params.id ?
