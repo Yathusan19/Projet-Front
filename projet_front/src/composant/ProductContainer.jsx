@@ -5,21 +5,15 @@ import products from '../php/datasProduits.json';
 export default function ProductContainer({query}) {
     
     function matchQuery(element) {
-        const place = query.place ? query.place === element.localisation ? true : false : true
-        const product = query.product ? query.product.includes(element.name) ? true : false : true
-        const price = query.price ? query.price >= element.price ? true : false : true
-        if ( place && product && price ) return true
+        console.log(element.nom.toLowerCase())
+        // const place = query.place ? query.place === element.localisation ? true : false : true
+        const produit = query.product ? query.product.includes(element.nom.toLowerCase()) ? true : false : true
+        const price = query.price ? query.price >= element.prix ? true : false : true
+        if ( produit && price ) return true
         return false
     }
 
     const [productsList, setProductsList] = useState(products)
-
-    // function getAllProducts() {
-    //     axios.get('DATABASE_URL')
-    //         .then(function (response) {
-    //             setProductsList(response.data)
-    //         })
-    // }
 
     return (
         <section className="products-container">

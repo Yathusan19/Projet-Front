@@ -91,13 +91,80 @@
     bottom: 50px;
     color: white;
 }
+/* Section decouvrir le projet */
+
+.container-projet{
+    height: auto;
+    width: 100%;
+    padding: 80px 91px;
+    margin: 0 0 60px 0;
+}
+.title-projet{
+    font-family: var(--main-typo);
+    font-style: normal;
+    font-weight: 700;
+    font-size: 30px;
+    line-height: var(--font-height-title);
+    margin: 0 0 0 40px;
+    position: relative;
+}
+.title-projet::before {
+    content: '';
+    width: 60px;
+    height: 4px;
+    background-color: #88BB4B;
+    position: absolute;
+    top: -12px;
+    left: -40px;
+}
+.container-flex-projet{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#inverse{
+    flex-direction: row-reverse;
+}
+.container-image-projet{
+    display: flex;
+    align-items: center;
+    margin: 60px 0 0 0;
+    img{
+        width: 50%;
+        margin: auto;
+    }
+}
+.container-txt-projet{
+    width: 50%;
+    height: 100%;
+    .title-txt-projet{
+        font-size: 30px;
+        text-transform: uppercase;
+        text-align: center;
+        margin: 20px 0;
+    }
+    .title-deux-txt-projet{
+        margin: 0 0 20px 0;
+        font-size: 25px;
+        text-align: center;
+    }
+    .txt-projet{
+        font-size: 20px;
+        align-items: center;
+        text-align: justify;
+        margin: auto;
+        width: 80%;
+    }
+}
 
 /* Section map */ 
 
 .sectionMap{
-    height: 90vh;
+    height: 80vh;
     padding: 0 91px;
     max-width: 1440px;
+    margin: 60px auto;
 }
 
 .mapTitle{
@@ -106,8 +173,8 @@
     font-weight: 700;
     font-size: 30px;
     line-height: var(--font-height-title);
-    margin: 0 0 0 40px;
     position: relative;
+    margin: 0 0 0 111px;
 }
 .mapTitle::before{
     content: '';
@@ -117,17 +184,19 @@
     position: absolute;
     top: -12px;
     left: -40px;
+
 }
 .container-map-flex{
     width: 100%;
     display: flex;
     margin: auto;
+    align-items: center;
 }
 .containerMap{
-    width: 50vw;
-    height: 85vh;
+    width: 75%;
+    height: 80vh;
     div{
-        height: 80%;
+        height: 80vh;
         border-radius: 20px;
     }
 }
@@ -137,7 +206,7 @@
 }
 .container-map-txt{
     height: 75vh;
-    width: 40%;
+    width: 50%;
     background-color: rgba(0, 0, 0, 0.7);
     padding: 0 40px;
     display: flex;
@@ -146,8 +215,19 @@
     justify-content: center;
     color: white;
     border-radius: 0 20px 20px 0;
+    background-image: url(../../../public/assets/images/photo_map.jpg);
+    background-position: 70%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    box-shadow: rgba(0, 0, 0, 0.302) 5px 4px 3px;
+    h3{
+        font-size: 30px;
+    }
     p{
+        margin: 30px 0 0 0;
         text-align: justify;
+        font-size: 20px;
+        color: white;
     }
 }
 
