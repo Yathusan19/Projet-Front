@@ -25,7 +25,7 @@ export default function Home() {
                 </div></Link>
                 <Link to="/"><div className="containerImageBloc" id='imageDeux'>
                     <div className="masqueNoir">
-                        <h3 className='titreProjet'>Vous êtes un agriculteur ? <br/>
+                        <h3 className='titreProjet'>Vous êtes un client(e) ? <br/>
                             Venez prendre part au projet 
                         </h3>
                     </div>
