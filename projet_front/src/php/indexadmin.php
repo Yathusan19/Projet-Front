@@ -109,8 +109,8 @@ if(isset($_POST['valider']))
     {
         if(!empty($_POST['image']) AND !empty($_POST['nom']) AND !empty($_POST['prix']) AND !empty($_POST['desc']) AND !empty($_POST['quantite']))
         {
-            $image = htmlspecialchars(strip_tags($_POST['image']));
             $nom = htmlspecialchars(strip_tags($_POST['nom']));
+            $image = htmlspecialchars(strip_tags($_POST['image']));
             $prix = htmlspecialchars(strip_tags($_POST['prix']));
             $desc = htmlspecialchars(strip_tags($_POST['desc']));
             $quantite = htmlspecialchars(strip_tags($_POST['quantite']));

@@ -5,12 +5,12 @@ require("fonctions.php");
 
 if(!isset($_SESSION['xRttpHo0greL39']))
 {
-    header("Location: ../login.php");
+    header("Location: login.php");
 }
 
 if(empty($_SESSION['xRttpHo0greL39']))
 {
-    header("Location: ../login.php");
+    header("Location: login.php");
 }
 
 if(!isset($_GET['id'])){

@@ -78,7 +78,7 @@ function ajouter($nom, $image, $desc , $prix, $quantite)
 {
     if(require("connect.php"))
     {
-        $req = $access->prepare("INSERT INTO produits (nom, image, description, prix, quantite) VALUES ($nom, $image, $desc , $prix, $quantite)");
+        $req = $access->prepare("INSERT INTO produits (nom, image, description, prix, quantite) VALUES ('$nom', '$image', '$desc' , $prix, $quantite)");
 
         $req->execute(array($nom, $image, $desc , $prix, $quantite));
 
