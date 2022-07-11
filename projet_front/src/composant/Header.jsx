@@ -20,6 +20,7 @@ export default function Header() {
 				<Link to="/panier">Accueil</Link>
 				<Link to="/produits">Produits</Link>
 				<Link to="/">Contact</Link>
+				<Link to="/">Blog</Link>
 				 <Link onClick={() => setModal(!modal)} className="header-button" to="/">Connexion</Link>
 				<Link className="header-panier" to="/"><img src="assets/images/icon-panier.svg" alt="Afficher le panier"/></Link>
 			</nav>
