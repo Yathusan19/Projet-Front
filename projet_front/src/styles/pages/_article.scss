@@ -1,275 +1,212 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    
-}
-
-
-
-.section_one{
+.section_one {
     display: flex;
     align-items: center;
     width: 100%;
 }
 
-
-
-.title{
+.title {
     display: flex;
     align-items: flex-end;
-    
+    font-family: "SF Pro Display";
     font-style: normal;
     font-weight: 800;
     font-size: 50px;
     text-transform: uppercase;
-    
     color: #555555;
 }
 
-.img_sec{
-    
-    /* width: 697px; */
+.img_sec {
     height: 559px;
     left: 89px;
     top: 199px;
-    
     background: rgba(0, 0, 0, 0.01);
     border-radius: 20px;
-    
 }
 
-.zone_buttons{
+.zone_buttons {
     margin-top: 30px;
     margin-bottom: 30px;
 }
 
-.rest{
+.rest {
     justify-content: center;
     display: flex;
     align-items: center;
-    
     text-transform: initial;
-    margin-left: 20px;
-    margin-left: 2px;
-    width: 154px;
+    width: 254px;
     height: 50px;
     left: 1130px;
     top: 314px;
-    
-    
-    background: #DD4124;
+    background: #dd4124;
     border-radius: 0px 10px 10px 0px;
-    
-    
-    
+    font-family: "SF Pro Display";
     font-style: normal;
     font-weight: 500;
     font-size: 16px;
     line-height: 24px;
-    
-    text-align: center;
-    
-    color: #FFFFFF;
-    
+    color: #ffffff;
 }
 
-.first_sec_text{
+.first_sec_text {
     margin-left: 25px;
 }
 
-.vente{
-    
+.vente {
+    font-family: "SF Pro Display";
     font-style: normal;
     font-weight: 400;
-    
     color: #555555;
-    
 }
 
-
-.title_sec_two{
+.title_sec_two {
     margin: 30px;
-    
+    font-family: "SF Pro Display";
     font-style: normal;
     font-weight: 600;
     font-size: 30px;
-    color:#555555;
-    
+    color: #555555;
     text-align: justify;
-    
 }
 
-
-.img_0{
-    width: 378px;
-    height: 335px;
-    left: 90px;
-    top: 900px;
-    
-    
-    border-radius: 20px;
-    // background-image: url(../../../public/assets/images/image2.png) ;
-    background-repeat: no-repeat;
-    background-size: contain;
-    display: flex;
-    align-items: center;
-    
-}
-
-.img_1{
+.img_0 {
     width: 378px;
     height: 335px;
     left: 90px;
     top: 900px;
     border-radius: 20px;
-    // background-image: url(../../../public/assets/images//image3.png) ;
+    background-image: url(../../../public/assets/images/image2.png);
     background-repeat: no-repeat;
     background-size: contain;
     display: flex;
     align-items: center;
 }
 
-.img_2{
+.img_1 {
     width: 378px;
     height: 335px;
     left: 90px;
     top: 900px;
-    
     border-radius: 20px;
-    // background-image: url(../../../public/assets/images//image4.png) ;
+    background-image: url(../../../public/assets/images//image3.png);
     background-repeat: no-repeat;
     background-size: contain;
     display: flex;
     align-items: center;
 }
 
+.img_2 {
+    width: 378px;
+    height: 335px;
+    left: 90px;
+    top: 900px;
+    border-radius: 20px;
+    background-image: url(../../../public/assets/images//image4.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    display: flex;
+    align-items: center;
+}
 
-.third_section{
+.third_section {
     display: flex;
     justify-content: space-around;
-    
 }
 
-.reservation{
+.reservation {
     width: 195px;
     height: 50px;
     left: 839px;
     top: 558px;
-    
-    
-    background: #88BB4B;
+    background: #88bb4b;
     border-radius: 15px;
     border: none;
-    
+    font-family: "SF Pro Display";
     font-style: normal;
     font-weight: 500;
     font-size: 18px;
     line-height: 21px;
     text-align: center;
-    
-    color: #FFFFFF;
+    color: #ffffff;
 }
 
-
-.paiement{
-    
+.paiement {
+    font-family: "SF Pro Display";
     font-style: normal;
     font-weight: 500;
     font-size: 18px;
     line-height: 21px;
     text-align: center;
-    
-    color: #FFFFFF;
+    color: #ffffff;
     border: none;
     width: 195px;
     height: 50px;
     left: 1044px;
     top: 558px;
-    
-    
-    
-    background: #DD4124;
+    background: #dd4124;
     border-radius: 15px;
 }
 
-
-.vente2{
-    
-    
+.vente2 {
     height: 24px;
     left: 834px;
     top: 369px;
-    
-    
+    font-family: "SF Pro Display";
     font-style: normal;
     font-weight: 400;
     font-size: 20px;
     line-height: 24px;
-    
-    
     color: #555555;
-    
-    
 }
 
-.price{
+.price {
     margin-top: 15px;
     display: flex;
     display: flex;
     align-items: center;
 }
 
-
-.price >.prix{
-    
+.price>.prix {
+    font-family: "SF Pro Display";
     font-style: normal;
     font-weight: 700;
     font-size: 50px;
     line-height: 60px;
-    
     text-align: center;
-    
     color: #555555;
-    
 }
 
-.price >.taxe{
+.price>.taxe {
     margin-left: 20px !important;
-    
+    font-family: "SF Pro Display";
     font-style: normal;
     font-weight: 400;
     font-size: 18px;
     line-height: 21px;
-    
     color: #555555;
 }
 
-.poids{
+.poids {
     margin-left: 20px !important;
 }
-.section_two{
+
+.section_two {
     padding: 30px;
 }
 
-.section_one{
+.section_one {
     padding: 60px;
 }
 
-
 .product-count {
-    
     top: 25%;
     left: 45%;
-    
     border: 1px solid gray;
 }
 
-.quantity_poids{
+.quantity_poids {
     margin-top: 15px;
     display: flex;
     align-items: center;
-    
 }
 
 .product-count a {
@@ -283,7 +220,6 @@
     display: inline-block;
     width: 30px;
     height: 30px;
-    
     color: rgb(59, 19, 19);
     font-size: 24px;
     line-height: 30px;
@@ -291,8 +227,9 @@
     border: none;
     outline: none;
 }
+
 .button-count:active {
-    background-color: #1565C0;
+    background-color: #1565c0;
 }
 
 .number-product {
@@ -304,60 +241,46 @@
     text-align: center;
 }
 
-
-
-.titre{
-    
+.titre {
+    font-family: "SF Pro Display";
     font-style: normal;
     font-weight: 800;
     font-size: 30px;
     line-height: 36px;
     text-transform: uppercase;
-    
-    color: #FFFFFF;
-    
+    color: #ffffff;
 }
 
-.vente{
+.vente {
     margin-top: 15px;
-    
+    font-family: "SF Pro Display";
     font-style: normal;
     font-weight: 400;
     font-size: 16px;
     line-height: 19px;
-    
 }
 
-.prix{
-    
+.prix {
+    font-family: "SF Pro Display";
     font-style: normal;
     font-weight: 700;
     font-size: 25px;
     line-height: 30px;
-    
-    
-    color: #FFFFFF;
-    
-    
+    color: #ffffff;
 }
 
-.information{
+.information {
     margin-left: 20px;
     margin-top: 170px;
-    
 }
 
-
-
-.information>.vente{
-    color: #FFFFFF;
+.information>.vente {
+    color: #ffffff;
 }
 
-.quantite{
+.quantite {
     margin-top: 15px;
 }
-
-
 
 @media only screen and (max-width: 900px) {
     .section_one {
@@ -367,47 +290,38 @@
         flex-wrap: wrap;
         padding: 0;
     }
-    
-    
     .section_two {
         padding-top: 10px;
         padding-left: 60px;
         padding-right: 60px;
     }
-    
     .title {
         text-align: center;
         display: block;
         align-items: flex-end;
-        
+        font-family: "SF Pro Display";
         font-style: normal;
         font-weight: 800;
         font-size: 30px;
-        /* line-height: 60px; */
         text-transform: uppercase;
         color: #555555;
     }
-    
-    .rest{
+    .rest {
         display: initial;
         padding: 10px;
     }
-    
-    .quantity_poids{
+    .quantity_poids {
         align-items: center;
         justify-content: center;
         display: flex;
         flex-wrap: wrap;
     }
-    .description{
+    .description {
         text-align: center;
     }
-    
     .img_sec {
         margin: 0 auto;
-        
-        height:370px;
-        
+        height: 370px;
     }
     .zone_buttons {
         padding: 30px;
@@ -415,80 +329,66 @@
         flex-direction: column;
         justify-content: center;
         align-items: center;
+        row-gap: 20px;
     }
-    
     .reservation {
         margin-bottom: 20px;
     }
-    
-    .img_sec>img{
+    .img_sec>img {
         width: 100%;
         max-width: 400px;
         height: auto;
-        
     }
-    
     .information {
         margin-left: 10px;
         margin-top: 150px;
     }
-    
     .first_sec_text {
         margin: 0 auto;
     }
-    
     .third_section {
         display: flex;
         justify-content: space-around;
         flex-wrap: wrap;
-        
     }
-    
     .vente {
-        TEXT-ALIGN: center;
+        text-align: center;
         margin-top: 20px;
     }
-    
     .price {
         display: flex;
         align-items: center;
         justify-content: center;
         margin-top: 20px;
     }
-    
-    .quantite{
+    .quantite {
         text-align: center;
         margin-top: 20px;
     }
     .img_0 {
         margin-top: 15px;
-        
     }
-    
     .img_1 {
         margin-top: 15px;
         display: initial;
     }
-    
     .img_1 .information {
         margin-top: 185px;
     }
     .img_2 {
         margin-top: 15px;
     }
-    .information .titre{
+    .information .titre {
         text-align: center;
     }
-    .information .prix{
+    .information .prix {
         text-align: center;
-        
     }
 }
 
-@media only screen and (min-width: 1500px){
-    .information{
+@media only screen and (min-width: 1500px) {
+    .information {
         margin-left: 20px;
         margin-top: 190px;
     }
-    
 }
