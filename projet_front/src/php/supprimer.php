@@ -13,12 +13,12 @@ if(empty($_SESSION['xRttpHo0greL39']))
     header("Location: login.php");
 }
 
+$Produits=afficher();
 
 foreach($_SESSION['xRttpHo0greL39'] as $i){
     $nom = $i->pseudo;
     $pseudo = $i->pseudo;
 }
-
 ?>
 
     <!DOCTYPE html>
@@ -34,7 +34,7 @@ foreach($_SESSION['xRttpHo0greL39'] as $i){
 
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
         <div class="container-fluid">
-            <a class="navbar-brand" href="../">Packbio</a>
+            <a class="navbar-brand" href="#">Administration</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
@@ -44,18 +44,20 @@ foreach($_SESSION['xRttpHo0greL39'] as $i){
                         <a class="nav-link" aria-current="page" href="afficher.php">Produits</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link active" style="font-weight: bold;" aria-current="page" href="indexadmin.php">Nouveau</a>
+                        <a class="nav-link" aria-current="page" href="indexadmin.php">Nouveau</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="supprimer.php">Suppression</a>
+                        <a class="nav-link active" style="font-weight: bold;" href="supprimer.php">Suppression</a>
                     </li>
 
                 </ul>
+
                 <div style="margin-right: 500px">
                     <h5 style="color: #545659; opacity: 0.5;">Connecté en tant que: <?= $nom ?></h5>
                 </div>
 
                 <a class="btn btn-danger d-flex" style="display: flex; justify-content: flex-end;" href="destroy.php">Se deconnecter</a>
+
             </div>
         </div>
     </nav>
@@ -65,37 +67,41 @@ foreach($_SESSION['xRttpHo0greL39'] as $i){
 
             <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
 
-
                 <form method="post">
                     <div class="mb-3">
-                        <label for="exampleInputEmail1" class="form-label">L'image du produit</label>
-                        <input type="name" class="form-control" name="image" required>
 
-                    </div>
-                    <div class="mb-3">
-                        <label for="exampleInputPassword1" class="form-label">Nom du produit</label>
-                        <input type="text" class="form-control" name="nom"  required>
-                    </div>
+                        <div class="mb-3">
+                            <label for="exampleInputPassword1" class="form-label">Identifiant du produit</label>
 
-                    <div class="mb-3">
-                        <label for="exampleInputPassword1" class="form-label">Prix</label>
-                        <input type="number" class="form-control" name="prix" required>
-                    </div>
+                            <input type="number" class="form-control" name="idproduit" required>
+                        </div>
 
-                    <div class="mb-3">
-                        <label for="exampleInputPassword1" class="form-label">Description</label>
-                        <textarea class="form-control" name="desc" required></textarea>
-                    </div>
-
-                    <div class="mb-3">
-                        <label for="exampleInputPassword1" class="form-label">Quantité</label>
-                        <input type="number" class="form-control" name="quantite" required>
-                    </div>
-
-                    <button type="submit" name="valider" class="btn btn-primary">Ajouter un nouveau produit</button>
+                        <button type="submit" name="valider" class="btn btn-primary">Supprimer le produit</button>
                 </form>
 
-            </div></div></div>
+            </div>
+
+
+            <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+
+                <?php foreach($Produits as $produit): ?>
+                    <div class="col">
+                        <div class="card shadow-sm">
+
+                            <img src="<?= $produit->image ?>">
+
+                            <h3><?= $produit->id ?></h3>
+
+                            <div class="card-body">
+
+                            </div>
+                        </div>
+                    </div>
+                <?php endforeach; ?>
+
+            </div>
+
+        </div></div>
 
 
     </body>
@@ -105,25 +111,23 @@ foreach($_SESSION['xRttpHo0greL39'] as $i){
 
 if(isset($_POST['valider']))
 {
-    if(isset($_POST['image']) AND isset($_POST['nom']) AND isset($_POST['prix']) AND isset($_POST['desc']) AND isset($_POST['quantite']))
+    if(isset($_POST['idproduit']))
     {
-        if(!empty($_POST['image']) AND !empty($_POST['nom']) AND !empty($_POST['prix']) AND !empty($_POST['desc']) AND !empty($_POST['quantite']))
+        if(!empty($_POST['idproduit']) AND is_numeric($_POST['idproduit']))
         {
-            $image = htmlspecialchars(strip_tags($_POST['image']));
-            $nom = htmlspecialchars(strip_tags($_POST['nom']));
-            $prix = htmlspecialchars(strip_tags($_POST['prix']));
-            $desc = htmlspecialchars(strip_tags($_POST['desc']));
-            $quantite = htmlspecialchars(strip_tags($_POST['quantite']));
+            $idproduit = htmlspecialchars(strip_tags($_POST['idproduit']));
 
             try
             {
-                ajouter($nom, $image, $desc , $prix, $quantite);
-                header('Location: afficher.php');
+                supprimer($idproduit);
+
             }
             catch (Exception $e)
             {
                 $e->getMessage();
             }
+
+
 
         }
     }

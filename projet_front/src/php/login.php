@@ -7,7 +7,7 @@ if(isset($_SESSION['xRttpHo0greL39']))
 {
     if(!empty($_SESSION['xRttpHo0greL39']))
     {
-        header("Location: admin/afficher.php");
+        header("Location: afficher.php");
     }
 }
 
@@ -64,9 +64,9 @@ if(isset($_POST['envoyer']))
 
         if($admin){
             $_SESSION['xRttpHo0greL39'] = $admin;
-            header('Location: admin/afficher.php');
+            header('Location: afficher.php');
         }else{
-            header('Location: index.php');
+            header('Location: login.php');
         }
     }
 

@@ -1,4 +1,5 @@
 <?php
+include "connect.php";
 
 function ajouterUser($nom, $prenom, $identifiant, $motdepasse)
 {
